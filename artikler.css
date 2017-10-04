@@ -1,0 +1,203 @@
+body {
+	line-height: 1.6;
+	background: #D3D3D3;
+	
+	display: grid; 
+	grid-template-rows: 8vh 50vh auto 4em;
+	grid-template-columns: 1fr 5fr 2fr 1fr;
+	grid-template-areas: ". header header ."
+						 ". banner banner ." 
+						 ". main sidebar ."
+						 ". footer footer ."; 
+	grid-column-gap: 1.5em;
+	
+}
+
+header {
+	grid-area: header;
+	
+}
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+header {
+	background: #D3D3D3;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+footer {
+	background: #D3D3D3;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 10px;
+}
+
+
+
+
+.banner {
+	grid-area: banner;
+	background: url(http://www.corningareabibleclub.org/wp-content/uploads/2015/04/background_grey.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; 
+}
+
+.banner-subtitle {
+	color: white;
+	margin: 0;
+	font-size: 30px;
+	
+}
+	
+
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: sidebar;
+	background: #A9A9A9;
+	padding: 2em;
+}
+
+footer {
+	grid-area: footer;
+}
+
+
+
+.card {
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+	grid-template-rows: min-content auto;
+	grid-template-areas: "img title"
+		"img content";
+	grid-column-gap: 1.5em;
+	padding: 1,5em;
+} 
+
+.card-img {
+	grid-area: img;
+	max-width: 100%;
+	
+}
+
+.card-title {
+	grid-area: title;
+	margin: 0;
+	font-weight: 300;
+	
+}
+
+.card-content {
+	grid-area: content;
+	
+}
+
+#wrap {
+   width:800px;
+   margin:0 auto;
+}
+#left_col {
+   float:left;
+   width:300px;
+}
+#right_col {
+   float:right;
+   width:300px;
+}
+a:link {
+    color: #A9A9A9;
+}
+.color1 {
+	color: white;
+	text-align: center;
+}
+.color2 {
+	color: blue;
+	text-align: center;
+}
+.color3 {
+	color: green;
+	text-align: center;
+}
+#left_col h3 {
+	text-align: center;
+}
+#left_col p {
+	text-align: center;
+}
+#right_col h3 {
+	text-align: left;
+}
+#right_col p {
+	text-align: left;
+}
+.card h2 {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+.card p {
+	text-align: center;
+}
+.card a {
+	color: #444;
+}
+#right_col color1 {
+	color: yellow;
+}
+
+

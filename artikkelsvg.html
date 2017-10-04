@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>forside-oblig2</title>
+	<link rel="stylesheet" type="text/css" href="artikler.css">
+	<script src="https://use.fontawesome.com/7dcf65db40.js"></script>
+</head>
+<body>
+<header>
+      <div class="container">
+      <h1 class="logo"></h1>
+
+     <nav>
+        <ul>
+          <li><a href="forside.html">Forside</a></li>
+          <li><a href="omdennesiden.html">Om</a></li>
+          <li><a href="artikkelsamling.html">Artikler</a></li>
+          <li><a href="ressurser.html">Ressurser</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  
+
+
+</header>
+
+<div class="banner">
+  <h1 class="banner-title">Simen Stubsjøen</h1>
+  <p class="banner-subtitle">Webutvikling</p>
+</div>
+
+<main>
+  <h1>Hva er SVG, og hva kan det brukes til?</h1>
+  <div class="card">
+   <h2 class="card-title">Scalable Vector Graphics</h2>
+    <div class="card-content">
+	 <p>SVG er en bildekode/format som blir brukt til å forklare todimensjonal
+	    grafikk og grafiske løsninger i XML. XML formatet gjør at det er et
+	    tekstbasert bildeformat, slik at vi kan lese koden til bildet.
+	    Det kreves ikke stor kunnskap innenfor bilderedigering for å skjønne
+	    koden da ordene som blir brukt er ganske likt fra hva de betyr i virkeligheten
+	 </p>
+	 <div id="wrap">
+    <div id="left_col">
+        <h3>Figur</h3>
+        <p>Sirkel</p>
+        <svg height="100" width="100">
+  		<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+  		Sorry, your browser does not support inline SVG.  
+		</svg>
+    	<p>Ellipse</p>
+    	<svg height="150" width="500">
+  		<ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+  		<ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+  		<ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+  		Sorry, your browser does not support inline SVG. 
+		</svg>
+		<p>Stjerne</p>
+		<svg height="210" width="500">
+  		<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+  		Sorry, your browser does not support inline SVG.
+		</svg>
+
+    
+    </div>
+    <div id="right_col">
+        <h3>Kode</h3>
+        <p>Sirkel</p>
+        <p> (svg) height="100" width="100">
+  			(circle) cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" /></p>
+  		<p>Tre ellipser oppå hverandre</p>
+  		<p>(svg) height="150" width="500">
+  		(ellipse) cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+  		(ellipse) cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+  		(ellipse) cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+  		(/svg)
+   		(/svg)</p>
+   		<br>
+   		<p>Stjerne</p>
+   		<p>(svg) height="210" width="500">
+  		(polygon) points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+ 		(svg)</p>
+    </div>
+    </div>
+      
+    </div>
+   </div>
+   
+   
+
+</main>
+
+
+<footer>
+  <h3 class="footer"><a href="omdennesiden.html"><i class="fa fa-bullseye"></i>Om denne siden</h3>
+</footer>
